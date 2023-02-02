@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/leadzen-task/static/css/main.02c3e938.css",
+    "main.js": "/leadzen-task/static/js/main.4ea73f94.js",
+    "static/js/787.20d91dba.chunk.js": "/leadzen-task/static/js/787.20d91dba.chunk.js",
+    "index.html": "/leadzen-task/index.html",
+    "main.02c3e938.css.map": "/leadzen-task/static/css/main.02c3e938.css.map",
+    "main.4ea73f94.js.map": "/leadzen-task/static/js/main.4ea73f94.js.map",
+    "787.20d91dba.chunk.js.map": "/leadzen-task/static/js/787.20d91dba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.02c3e938.css",
+    "static/js/main.4ea73f94.js"
+  ]
+}
