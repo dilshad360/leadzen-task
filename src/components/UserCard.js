@@ -1,19 +1,20 @@
 import React, { useState } from "react";
 
 function UserCard({ user }) {
+  
   const [view, setView] = useState(false);
 
   return (
     <div className="shadow-xl m-3 p-9 rounded-xl bg-white">
-      <ul className="flex  justify-between items-center">
-        <li className="font-bold flex-1">{user.name}</li>
-        <li className="flex  flex-col flex-1">
+      <ul className="flex flex-col justify-between items-start md:items-center md:flex-row">
+        <li className="font-bold flex-1 m-1">{user.name}</li>
+        <li className="flex  flex-col flex-1 m-1">
           <span className="font-semibold">Username</span>{user.username}
         </li>
-        <li className="flex flex-col flex-1">
+        <li className="flex flex-col flex-1 m-1">
           <span className="font-semibold">Email</span> {user.email}
         </li>
-        <li className="flex flex-col flex-1">
+        <li className="flex flex-col flex-1 m-1">
           <span className="font-semibold">Company</span> {user.company.name}
         </li>
         <li>
@@ -26,7 +27,7 @@ function UserCard({ user }) {
         </li>
       </ul>
       {view && (
-        <div className="mt-10 flex bg-slate-100 p-6 rounded-2xl">
+        <div className="mt-3 flex flex-col bg-slate-100 p-6 rounded-2xl md:flex-row md:mt-10">
           <ul>
             <li className="flex flex-col mb-5">
               <span className="font-semibold">Phone</span> {user.phone}
@@ -35,7 +36,7 @@ function UserCard({ user }) {
               <span className="font-semibold">Website</span>{user.website}
             </li>
           </ul>
-          <ul className="ml-16">
+          <ul className="md:ml-16">
             <li className="flex flex-col mb-5">
               <span className="font-semibold">Street</span> {user.address.street}
             </li>

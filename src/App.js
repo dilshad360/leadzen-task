@@ -19,7 +19,7 @@ function App() {
 
 
   return (
-    <div className="px-24 py-10">
+    <div className="px-2 py-10 md:px-24">
       <h1 className='text-center font-bold text-4xl mb-4'>Users</h1>
       {users.length ? 
       (<div>
